@@ -28,15 +28,15 @@ public class ElectricCar extends ACar{
     public int getRegistrationFee() {
         int kmPL = (int) (100 / (getWhPrKm() / 91.25));
         if (kmPL >= 20 && kmPL <= 50) {
-            return 330 + 130;
+            return 330;
         } else if (kmPL >= 15 && kmPL <= 20) {
-            return 1050 + 1930;
+            return 1050;
         } else if (kmPL >= 10 && kmPL <= 15) {
-            return 2340 + 1850;
+            return 2340;
         } else if (kmPL >= 5 && kmPL <= 10) {
-            return 5500 + 2770;
+            return 5500;
         } else if (kmPL < 5) {
-            return 10470 + 15260;
+            return 10470;
         }else return 0;
     }
 
