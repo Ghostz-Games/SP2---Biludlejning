@@ -4,9 +4,9 @@ public class GasolineCar extends AFuelCar {
 
     private int kmPrLitre;
 
-    public GasolineCar(int kmPrLitre){
-        super(kmPrLitre);
-        this.kmPrLitre = kmPrLitre;
+    public GasolineCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrLitre){
+        super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
+
     }
 
     @Override
@@ -16,7 +16,7 @@ public class GasolineCar extends AFuelCar {
 
     @Override
     public int getRegistrationFee() {
-        int kmPrLitre = this.getKmPrLitre();
+        int kmPrLitre = super.getKmPrLitre();
         if (kmPrLitre >= 20 && kmPrLitre <= 50) {
             return 330;
         } else if (kmPrLitre >= 15 && kmPrLitre <= 20) {
@@ -32,6 +32,6 @@ public class GasolineCar extends AFuelCar {
 
     @Override
     public String toString(){
-        return super.toString()+" "+"Fuel type: "+getFuelType()+" "+"Registration Fee: "+getRegistrationFee();
+        return super.toString()+", "+"Fuel type: "+getFuelType()+", "+"Registration Fee: "+getRegistrationFee();
     }
 }

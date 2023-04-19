@@ -9,7 +9,6 @@ public abstract class ACar implements Car{
 
     private int numberOfDoors;
 
-    //IKKE SIKKER PÅ OM JEG SKULLE GØRE DET HER.
     public ACar(String registrationNumber, String make, String model, int numberOfDoors){
         this.registrationNumber = registrationNumber;
         this.make = make;
@@ -36,7 +35,7 @@ public abstract class ACar implements Car{
 
     @Override
     public String toString(){
-        return "Registrationnumber: "+registrationNumber+ " "+"Make: "+make+" "+"Model: "+model+" "+"Number of doors: "+numberOfDoors;
+        return "Registrationnumber: "+registrationNumber+", "+"Make: "+make+", "+"Model: "+model+", "+"Number of doors: "+numberOfDoors;
     }
 
 }

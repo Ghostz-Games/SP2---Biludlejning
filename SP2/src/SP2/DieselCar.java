@@ -4,8 +4,8 @@ public class DieselCar extends AFuelCar{
 
     private int kmPrLitre;
 
-    public DieselCar(int kmPrLitre){
-        super(kmPrLitre);
+    public DieselCar(String registrationNumber, String make, String model, int numberOfDoors, int kmPrLitre){
+        super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
         this.kmPrLitre = kmPrLitre;
     }
 
@@ -37,7 +37,7 @@ public class DieselCar extends AFuelCar{
 
     @Override
     public String toString(){
-        return super.toString()+" "+"Fuel type: "+getFuelType()+" "+"Registration Fee: "+getRegistrationFee();
+        return super.toString()+", "+"Fuel type: "+getFuelType()+", "+"Registration Fee: "+getRegistrationFee();
     }
 
 }

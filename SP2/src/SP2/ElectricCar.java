@@ -5,7 +5,8 @@ public class ElectricCar extends ACar{
     private int batteryCapacity;
     private int maxRange;
 
-    public ElectricCar(int batteryCapacity, int maxRange){
+    public ElectricCar(String registrationNumber, String make, String model, int numberOfDoors, int batteryCapacity, int maxRange){
+        super(registrationNumber, make, model, numberOfDoors);
         this.batteryCapacity = batteryCapacity;
         this.maxRange = maxRange;
     }
@@ -41,6 +42,6 @@ public class ElectricCar extends ACar{
 
     @Override
     public String toString(){
-        return super.toString()+" "+"Watt hour per Kilometer: "+getWhPrKm()+" "+"Battery capacity:"+getBatteryCapacityKWh()+" "+"Max range:"+getMaxRangeKm()+" "+"Registration fee:"+getRegistrationFee();
+        return super.toString()+", "+"Watt hour per Kilometer: "+getWhPrKm()+", "+"Battery capacity: "+getBatteryCapacityKWh()+", "+"Max range: "+getMaxRangeKm()+", "+"Registration fee: "+getRegistrationFee();
     }
 }
