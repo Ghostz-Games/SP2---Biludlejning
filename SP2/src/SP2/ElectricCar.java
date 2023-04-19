@@ -27,6 +27,7 @@ public class ElectricCar extends ACar{
     @Override
     public int getRegistrationFee() {
         int kmPL = (int) (100 / (getWhPrKm() / 91.25));
+
         if (kmPL >= 20 && kmPL <= 50) {
             return 330;
         } else if (kmPL >= 15 && kmPL <= 20) {
