@@ -10,7 +10,7 @@ public class Main {
         FleetOfCars fleet = new FleetOfCars();
         DieselCar car1 = new DieselCar("DK:MD23233","Volkswagen","Polo",4,22, true);
         DieselCar car2 = new DieselCar("DK:TK43W33","Volkswagen","Polo",4,22, false);
-        ElectricCar car3 = new ElectricCar("DK:VR00MM1", "Tesla", "model 3", 4, 57, 75);
+        ElectricCar car3 = new ElectricCar("DK:VR00MM1", "Tesla", "model 3", 4, 500, 560);
         GasolineCar car4 = new GasolineCar("DK:KACH00W", "Volvo", "XC60",4,12);
         fleet.addCar(car1);
         fleet.addCar(car2);
