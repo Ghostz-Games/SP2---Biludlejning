@@ -19,7 +19,7 @@ public class Main {
         System.out.println("------------------------------------------------------------------------------------------------------------");
         System.out.println(fleet.toString());
         System.out.println("------------------------------------------------------------------------------------------------------------");
-        System.out.println("The total registraion fee for the fleet is: "+fleet.getTotalRegistrationFeeForFleet()+" DKK");
+        System.out.println("The total registration fee for the fleet is: "+fleet.getTotalRegistrationFeeForFleet()+" DKK");
         System.out.println("------------------------------------------------------------------------------------------------------------");
 
 
